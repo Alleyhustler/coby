@@ -1,0 +1,63 @@
+@import "basic.css";
+
+main {
+  color: white;
+  display: inherit;
+}
+
+a.footnote {
+  vertical-align: super;
+  font-size: smaller;
+  text-decoration: none;
+  color: grey;
+}
+
+main article {
+  margin-left: 1em;
+}
+
+@media (prefers-color-scheme: dark) {
+  main article {
+    background-color: #01002B;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  main article {
+    color: black;
+    background-color: #f2dfed;
+  }
+
+  a.footnote {
+    color: darkslategray;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery img {
+  max-height: 40vh;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+
+.white-background {
+  background-color: white;
+}
+
+.gallery figcaption {
+  text-align: center;
+}
+
+.gallery-small figure {
+  max-width: 40%;
+}

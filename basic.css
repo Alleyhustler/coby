@@ -1,0 +1,126 @@
+body {
+  background-color: #0C325F;
+  background-image: radial-gradient(circle at 50% 200%, #167BDF 0%, transparent 69%), radial-gradient(circle at 80% 40%, #031635 0%, transparent 51%);
+  background-blend-mode: normal, normal;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+article,
+section,
+aside {
+  color: white;
+  background-color: black;
+}
+
+article,
+section {
+  margin: 1em;
+  padding: 0.5em;
+}
+
+img:not(#coby, #logo, .icon, .white-background img, .button) {
+  border-radius: 5px;
+  filter: drop-shadow(0px -2px 1px rgba(0, 0, 0, 0.295));
+}
+
+article>h1:first-child,
+article>h2:first-child,
+section>h1:first-child,
+section>h2:first-child,
+article>h3:first-child,
+table>thead tr {
+  color: #f8d536;
+  text-shadow:
+    -1px -1px 0 #061637,
+    1px -1px 0 #061637,
+    -1px 1px 0 #061637,
+    1px 1px 0 #061637;
+  padding-top: 0;
+  margin: -0.7em;
+  margin-bottom: 0.5em;
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+  text-indent: 1em;
+  padding-right: 1em;
+  background-color: #025caf;
+  box-shadow: inset rgba(10, 1, 10, 0.6) 0 0.3em .3em, inset rgba(0, 0, 0, 0.15) 0 -0.1em .3em, #050d14 0 .1em 3px, #101a24 0 .1em 1px, rgba(0, 0, 0, 0.2) 0 .3em 5px;
+  border: 3px ridge #061637;
+  background: radial-gradient(circle at bottom 250% left -6px, #2e3a55 60%, #061637 60.5%);
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+}
+
+th {
+  padding: 0.3em;
+}
+
+tbody td {
+  border: 1px solid #0f244e;
+  padding: 0.5em;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #ffffff75;
+}
+
+section>h2:first-child {
+  margin: -0.4em;
+  margin-bottom: 0.5em;
+}
+
+article>h2:first-child a {
+  color: white;
+}
+
+.h-feed {
+  border: none;
+  background: none;
+  backdrop-filter: none;
+  box-shadow: none;
+}
+
+article,
+section,
+aside,
+article.h-entry,
+table {
+  color: black;
+  background: rgba(242, 223, 237, 0.856);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.8px);
+  -webkit-backdrop-filter: blur(8.8px);
+  border: 3px ridge #00418e;
+  box-shadow: inset rgba(230, 33, 115, 0.514) 0 0.3em .3em, inset rgba(151, 139, 27, 0.15) 0 -0.1em .3em, #574207 0 .1em 3px, #101a24 0 .1em 1px, rgba(96, 11, 117, 0.2) 0 .3em 5px;
+}
+
+.h-entry h2 {
+  border-radius: 16px;
+}
+
+@media (prefers-color-scheme: dark) {
+
+  body {
+    background-image: radial-gradient(circle at 50% 200%, #000 0%, transparent 90%), radial-gradient(circle at 80% 40%, #031635 0%, transparent 71%);
+  }
+
+  article,
+  section,
+  aside,
+  article.h-entry,
+  table {
+    color: white;
+    background: rgba(8, 14, 27, 0.904);
+    box-shadow: inset rgba(10, 1, 10, 0.6) 0 0.3em .3em, inset rgba(0, 0, 0, 0.15) 0 -0.1em .3em, #050d14 0 .1em 3px, #101a24 0 .1em 1px, rgba(0, 0, 0, 0.2) 0 .3em 5px;
+    border: 3px ridge #2a0f5c;
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: #00000075;
+  }
+}
